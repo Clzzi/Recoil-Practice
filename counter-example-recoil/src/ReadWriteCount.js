@@ -11,7 +11,7 @@ function ReadWriteCount() {
     <div>
       <h2>읽기 쓰기 카운터 컴포넌트</h2>
       <p>카운트 {count}</p>
-      <button onClick={() => setCount(count + 1)}>숫자 증가</button> 
+      <button onClick={() => setCount(count + 1)}>숫자 증가</button>
       {/* button을 누르게 되면 setCount라는 상태변경함수에 count라는 값 + 1만큼 적용시켜 count라는 상태의 값을 바꿈 */}
       
       <button onClick={() => setCount(count - 1)}>숫자 감소</button> 
@@ -19,12 +19,12 @@ function ReadWriteCount() {
       
       <button onClick={() => setCountUseSetRecoilState(count + 1)}> 
       {/* button을 누르게 되면 setCountUseSetRecoilState라는 함수 즉, 상태변경만 할수있게 받아온 함수에 (count 값에 + 1) 한걸 넣음 */}
-        숫자 증가
+        숫자 증가 ( useSetRecoilState 사용)
       </button>
       
       <button onClick={() => setCountUseSetRecoilState(count - 1)}> 
       {/* button을 누르게 되면 setCountUseSetRecoilState라는 함수 즉, 상태변경만 할수있게 받아온 함수에 (count 값에 - 1) 한걸 넣음 */}
-        숫자 감소
+        숫자 감소 ( useSetRecoilState 사용)
       </button>
       
       <button onClick={resetCount}>카운트 리셋</button> 
