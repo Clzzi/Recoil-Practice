@@ -15,4 +15,14 @@ export const countInputState = selector({ // selector를 사용해서 새로운 
   get: ({ get }) => { // get함수로 데이터를 가져와서 return해준다.
     return `현재 카운트 ${get(countState)} 이고 입력값은 ${get(inputState)}`;
   },
+  set: ({ set }, newValue ) => { // 여러개의 atom 정보를 동시에 수정할 수 있는 set 함수
+    set(countState, Number(newValue)); // count atom 수정
+    set(inputState, newValue + ''); // input atom 수정
+  }
 });
+
+/*
+  {() => setCountInput('9999')} -> 하게되면 selector로 만든 countInputState의 set함수에 9999가 입력되고, 
+  set함수 내부에서 countState에 9999를 숫자로 바꾼걸 넣어주고
+  set 함수 내부에서 inputStaet에 9999를 문자열로 바꿔서 넣어준다 
+*/

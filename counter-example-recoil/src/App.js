@@ -1,12 +1,12 @@
 import React from "react";
 import ReadOnlyCount from "./ReadOnlyCount";
 import ReadWriteCount from "./ReadWriteCount";
-import SelectorCount from "./SelectorCount";
+import SelectorCount2 from "./SelectorCount2";
 
 function App() {
   return (
     <>
-      <SelectorCount />
+      <SelectorCount2 />
     </>
   );
 }
