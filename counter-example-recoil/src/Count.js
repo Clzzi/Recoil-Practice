@@ -21,7 +21,7 @@ export const countInputState = selector({ // selector를 사용해서 새로운 
   }
 });
 
-/*
+/*  
   {() => setCountInput('9999')} -> 하게되면 selector로 만든 countInputState의 set함수에 9999가 입력되고, 
   set함수 내부에서 countState에 9999를 숫자로 바꾼걸 넣어주고
   set 함수 내부에서 inputStaet에 9999를 문자열로 바꿔서 넣어준다 
