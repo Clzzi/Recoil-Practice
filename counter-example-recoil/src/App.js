@@ -14,12 +14,12 @@
 
 // export default App;
 import React from "react";
-import RecoilStarCount2 from "./RecoilStarCount2";
+import DelayCount from "./DelayCount";
 
 function App() {
   return (
     <>
-        <RecoilStarCount2 />
+        <DelayCount />
     </>
   );
 }
