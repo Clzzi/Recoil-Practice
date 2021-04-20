@@ -8,10 +8,6 @@ const TodoInput = () => {
   // input값을 저장하는 atom
   const [input, setInput] = useRecoilState<string>(inputState);
 
-  // useEffect(() => {
-  //   console.log(input, todos);
-  // }, [input, todos]);
-
   const inputOnChange = (event: any) => {
     const { value } = event.target;
     setInput(value);

@@ -1,13 +1,9 @@
 import React from 'react';
-import TodoInput from 'components/todoInput';
-import TodoList from 'components/todoList';
+import TodoListTemplate from 'templates/todoListTemplate';
 
 function App() {
   return (
-    <div>
-      <TodoInput />
-      <TodoList />
-    </div>
+    <TodoListTemplate />
   );
 }
 
