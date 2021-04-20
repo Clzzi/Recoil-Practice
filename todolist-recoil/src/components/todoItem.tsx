@@ -11,7 +11,7 @@ const TodoItem = ({ contents, done, id, doneChange }: Types): JSX.Element => {
   return (
     <div className={"todoItem"}>
       <div className={"todoItem-id"}>{id}</div>
-      <div className={done ? "todoItem-title-complete" : "todoItem-title"}>
+      <div className={done ? "todoItem-title-complete" : "todoItem-title"} onClick={() => doneChange(id)}>
         {contents}
       </div>
       <input

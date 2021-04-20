@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useRecoilState } from "recoil";
 import { todoState, inputState, TodoType } from "recoil/Todo";
+import './todoInput.scss';
 
 const TodoInput = () => {
   // todo를 add하는 atom
@@ -48,15 +49,15 @@ const TodoInput = () => {
   };
 
   return (
-    <div className={"todoList-InputWrapper"}>
+    <div className={"todoListInput"}>
       <input
-        className={"todoList-Input"}
+        className={"todoListInput-Input"}
         type="text"
         value={input}
         onChange={inputOnChange}
         onKeyPress={onEnter}
       />
-      <button className={"todoList-btn"} onClick={onClickTodo}>
+      <button className={"todoListInput-btn"} onClick={onClickTodo}>
         O
       </button>
     </div>

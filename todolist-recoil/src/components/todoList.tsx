@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import TodoItem from "components/todoItem";
 import { useRecoilState } from "recoil";
 import { TodoType, todoState } from "recoil/Todo";
+import './todoList.scss';
 
 const TodoList = (): JSX.Element => {
   const [todos, setTodos] = useRecoilState<TodoType[]>(todoState);

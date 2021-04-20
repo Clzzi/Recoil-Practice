@@ -1,22 +1,28 @@
 .todoItem {
-  margin: 0px;
-  padding: 0px;
+  transition: 0.5s;
   display: flex;
-  font-size: 1.2rem;
-  
+  justify-content: space-between;
+  margin-bottom: 15px;
   &-id {
-    margin-right: 1rem;
-  }
-
-  &-title-complete {
-
+    display: inline-block;
   }
 
   &-title {
-
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.5s;
+    color: rgb(0,0,0);
+  }
+  
+  &-title-complete {
+    display: inline-block;    
+    color: rgba(0,0,0,0.3);
+    text-decoration: line-through;
+    cursor: pointer;
+    transition: 0.5s;
   }
 
   &-checkbox {
-
+ 
   }
 }
