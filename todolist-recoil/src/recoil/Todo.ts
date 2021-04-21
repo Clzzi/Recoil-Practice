@@ -1,12 +1,12 @@
 import { atom } from "recoil";
 
-export interface TodoType {
+export interface TodoType { // 기본 투두리스트 타입
   id: number;
   done: boolean;
   contents: string;
 }
 
-export const todoState = atom<TodoType[]>({
+export const todoState = atom<TodoType[]>({ // Recoil-Atom을 이용해서 할일들 목록을 배열에 저장
   key: "todolistState",
   default: [
     {
@@ -27,7 +27,7 @@ export const todoState = atom<TodoType[]>({
   ],
 });
 
-export const inputState = atom<string>({
+export const inputState = atom<string>({ // Recoil-Atom을 이용해 할일 적는 input atom
   key: "inputState",
   default: "",
 });

@@ -1,6 +1,6 @@
 import "./todoItem.scss";
 
-interface Types {
+interface Types { // props로 받을것들에 대한 타입지정
   id: number;
   done: boolean;
   contents: string;
@@ -8,10 +8,11 @@ interface Types {
   deleteItem: (id: number) => void;
 }
 
-const TodoItem = ({ contents, done, id, doneChange, deleteItem }: Types): JSX.Element => {
+const TodoItem = ({ contents, done, id, doneChange, deleteItem }: Types): JSX.Element => { // JSX를 return해야함으로 type은 JSX.Element
   return (
     <div className={"todoItem"}>
       <div className={"todoItem-id"}>{id}</div>
+      {/* 수행했으면 className을 바꿔줌 */}
       <div className={done ? "todoItem-title-complete" : "todoItem-title"} onClick={() => doneChange(id)}>
         {contents}
       </div>
