@@ -48,7 +48,6 @@ const TodoInput = () => {
   return (
     <>
       <div className={"todoInput"}>
-        <TodoFilter />
         <input
           className={"todoInput-Input"}
           type="text"
@@ -58,7 +57,7 @@ const TodoInput = () => {
           placeholder={"Write a ToDo"}
         />
         <div className={"todoInput-btn"} onClick={addTodo}>
-          💜
+          입력
         </div>
       </div>
     </>

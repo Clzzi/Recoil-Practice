@@ -1,8 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap");
+* {
+  font-family: "Nanum Gothic Coding", monospace;
+}
+
 .todoTemplate {
   position: absolute;
   left: 50%;
-  bottom: 500px;
+  bottom: 0px;
   transform: translate(-50%, -50%);
   margin: 0px;
   padding: 0px;
+  background-color: #dbe4ff;
+  border-radius: 8px;
+  box-shadow: 1px 1px 4px grey;
 }

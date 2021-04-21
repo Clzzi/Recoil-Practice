@@ -2,6 +2,7 @@ import { useRecoilValue, useSetRecoilState, useRecoilState } from "recoil";
 import { filterTodosSelector } from "recoil/todosState";
 import TodoItem from "components/TodoItem";
 import { todosState } from "recoil/todosState";
+import './todoList.scss';
 
 const TodoList = () => {
   const filteredTodos = useRecoilValue(filterTodosSelector);
@@ -15,7 +16,7 @@ const TodoList = () => {
   }
 
   return (
-    <div>
+    <div className = {'todoitemList'}>
       {filteredTodos.map((todo) => {
         
         const data = {

@@ -1,4 +1,5 @@
 import { TodoPropTypes } from "types/todoType";
+import './todoItem.scss';
 
 const TodoItem = ({data, onDelete, onDone}: TodoPropTypes) => {
   const {id, done, contents} = data;
@@ -6,7 +7,7 @@ const TodoItem = ({data, onDelete, onDone}: TodoPropTypes) => {
   return (
     <div className={"todoItem"}>
       <div className={"todoItem-title"} onClick={() => onDone(id)}>{contents}</div>
-      <div className={'todoItme-delete'} onClick={() => onDelete(id)}>삭제</div>
+      <div className={'todoItem-delete'} onClick={() => onDelete(id)}>삭제</div>
     </div>
   );
 };

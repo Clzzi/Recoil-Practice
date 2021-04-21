@@ -1,5 +1,6 @@
 import { filterTodosState } from "recoil/todosState";
 import { useSetRecoilState } from "recoil";
+import './todoFilter.scss';
 
 const TodoFilter = () => {
   const setFilter = useSetRecoilState(filterTodosState);
@@ -10,7 +11,7 @@ const TodoFilter = () => {
   };
 
   return (
-    <select name="filter" onChange={onChangeFilter}>
+    <select className={'todoSelector'} name="filter" onChange={onChangeFilter}>
       <option value="All">All</option>
       <option value="Done">Done</option>
       <option value="UnDone">UnDone</option>
