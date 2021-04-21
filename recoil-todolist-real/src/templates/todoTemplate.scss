@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap");
 * {
   font-family: "Nanum Gothic Coding", monospace;
+  user-select: none;
 }
 
 .todoTemplate {

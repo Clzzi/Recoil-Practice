@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
 .todoSelector {
   display: block;
+  width: 80px;
+  border: none;
+  margin-top: -4px;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  font-family: 'Noto Sans KR', sans-serif;
+  padding-left: 3px;
+  text-align-last: center;
+  text-align: center;
+  appearance: none;
+  box-shadow: 0.8px 0.8px 3px grey;
 }
