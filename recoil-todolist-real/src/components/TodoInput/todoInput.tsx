@@ -1,7 +1,8 @@
 import { useRecoilState } from "recoil";
 import { todosState, todoInputState } from "recoil/todosState";
 import { TodoType } from "types/todoType";
-import TodoFilter from 'components/TodoFilter';
+import TodoFilter from "components/TodoFilter";
+import "./todoInput.scss";
 
 const TodoInput = () => {
   const [input, setInput] = useRecoilState<string>(todoInputState);
@@ -45,20 +46,22 @@ const TodoInput = () => {
   };
 
   return (
-    <div className={"todoInput"}>
-      <TodoFilter />
-      <input
-        className={"todoInput-Input"}
-        type="text"
-        value={input}
-        onChange={onChangeInput}
-        onKeyPress={onEnter}
-        placeholder={"Write a ToDo"}
-      />
-      <div className={"todoInput-btn"} onClick={addTodo}>
-        💜
+    <>
+      <div className={"todoInput"}>
+        <TodoFilter />
+        <input
+          className={"todoInput-Input"}
+          type="text"
+          value={input}
+          onChange={onChangeInput}
+          onKeyPress={onEnter}
+          placeholder={"Write a ToDo"}
+        />
+        <div className={"todoInput-btn"} onClick={addTodo}>
+          💜
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -1,0 +1,12 @@
+.todoInput {
+  &-Input {
+    padding: 0px;
+    margin: 0px;
+    width: 150px;
+    border:none;
+    border-bottom: 1px solid gray;
+  }
+  &-btn {
+    display: inline-block;
+  }
+}

@@ -6,7 +6,7 @@ export interface TodoType {
 
 export interface TodoPropTypes {
   data: TodoType,
-  onDelete: () => void,
-  onDone: () => void,
+  onDelete: (id: number) => void,
+  onDone: (id: number) => void,
 };
 

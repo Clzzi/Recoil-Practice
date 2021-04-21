@@ -5,8 +5,8 @@ const TodoItem = ({data, onDelete, onDone}: TodoPropTypes) => {
 
   return (
     <div className={"todoItem"}>
-      <div className={"todoItem-title"}>{contents}</div>
-      <div className={'todoItme-delete'}>삭제</div>
+      <div className={"todoItem-title"} onClick={() => onDone(id)}>{contents}</div>
+      <div className={'todoItme-delete'} onClick={() => onDelete(id)}>삭제</div>
     </div>
   );
 };

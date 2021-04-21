@@ -1,16 +1,32 @@
-import { useRecoilValue } from "recoil";
+import { useRecoilValue, useSetRecoilState, useRecoilState } from "recoil";
 import { filterTodosSelector } from "recoil/todosState";
+import TodoItem from "components/TodoItem";
+import { todosState } from "recoil/todosState";
 
 const TodoList = () => {
-  // const [todos, setTodo] = useRecoilState(todosState);
-  const todos = useRecoilValue(filterTodosSelector);
+  const filteredTodos = useRecoilValue(filterTodosSelector);
+  
+  const onDelete = (id: number): void => {
+    console.log(id);
+  }
+  
+  const onDone = (id: number): void => {
+    console.log(id);
+  }
 
   return (
     <div>
-      {todos.map((todo) => {
+      {filteredTodos.map((todo) => {
+        
+        const data = {
+          id: todo.id,
+          done: todo.done,
+          contents: todo.contents
+        };
+
         return (
-          <div> {todo.contents} </div>
-        )
+          <TodoItem data={data} onDelete={onDelete} onDone={onDone} />
+        );
       })}
     </div>
   );
