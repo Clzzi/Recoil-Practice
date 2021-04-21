@@ -2,6 +2,7 @@ import React from "react";
 import { useRecoilState } from "recoil";
 import { todosState, todoInputState } from "recoil/todosState";
 import { TodoType } from "types/todoType";
+import TodoFilter from 'components/TodoFilter';
 
 const TodoInput = () => {
   const [input, setInput] = useRecoilState<string>(todoInputState);
@@ -46,6 +47,7 @@ const TodoInput = () => {
 
   return (
     <div className={"todoInput"}>
+      <TodoFilter />
       <input
         className={"todoInput-Input"}
         type="text"
