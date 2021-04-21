@@ -6,7 +6,7 @@ export const todosState = atom<TodoType[]>({
   default: [
     {
       id: 1,
-      done: false,
+      done: true,
       contents: "레코일 공부하기!",
     },
     {
@@ -16,7 +16,7 @@ export const todosState = atom<TodoType[]>({
     },
     {
       id: 3,
-      done: true,
+      done: false,
       contents: "놀기!",
     },
   ],

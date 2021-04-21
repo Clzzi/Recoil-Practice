@@ -1,10 +1,10 @@
 import TodoInput from "components/TodoInput";
 import TodoList from "components/TodoList";
-import './todoTemplate.scss';
+import "./todoTemplate.scss";
 
 const TodoTemplate = () => {
   return (
-    <div className={'todoTemplate'}>
+    <div className={"todoTemplate"}>
       <TodoInput />
       <TodoList />
     </div>

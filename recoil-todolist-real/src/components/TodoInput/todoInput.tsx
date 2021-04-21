@@ -2,7 +2,7 @@ import { useRecoilState } from "recoil";
 import { todosState, todoInputState } from "recoil/todosState";
 import { TodoType } from "types/todoType";
 import TodoFilter from "components/TodoFilter";
-import {IoCheckmarkSharp} from 'react-icons/io5';
+import { IoCheckmarkSharp } from "react-icons/io5";
 import "./todoInput.scss";
 
 const TodoInput = () => {
@@ -59,7 +59,7 @@ const TodoInput = () => {
           placeholder={"Write a ToDo"}
         />
         <div className={"todoInput-btn"} onClick={addTodo}>
-          <IoCheckmarkSharp className={'todoInput-icon'} />
+          <IoCheckmarkSharp className={"todoInput-icon"} />
         </div>
       </div>
     </>
