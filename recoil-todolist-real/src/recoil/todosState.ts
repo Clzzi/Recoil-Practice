@@ -1,9 +1,25 @@
-import { atom, selector, useRecoilState, useRecoilValue } from "recoil";
+import { atom, selector } from "recoil";
 import { TodoType } from "types/todoType";
 
 export const todosState = atom<TodoType[]>({
   key: "todosState",
-  default: [],
+  default: [
+    {
+      id: 1,
+      done: false,
+      contents: "1번",
+    },
+    {
+      id: 2,
+      done: false,
+      contents: "2번",
+    },
+    {
+      id: 3,
+      done: true,
+      contents: "3번",
+    },
+  ],
 });
 
 export const todoInputState = atom<string>({
@@ -27,11 +43,11 @@ export const filterTodosSelector = selector({
     switch (filter) {
       case "Done":
         return todos.filter((todo) => {
-          todo.done !== true;
+          return todo.done !== false;
         });
       case "UnDone":
         return todos.filter((todo) => {
-          todo.done !== false;
+          return todo.done !== true;
         });
       default:
         // All

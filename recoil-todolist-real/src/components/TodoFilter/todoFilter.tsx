@@ -1,6 +1,5 @@
-import React from "react";
-import { filterTodosSelector, filterTodosState } from "recoil/todosState";
-import { selector, useRecoilState, useRecoilValue, useSetRecoilState } from "recoil";
+import { filterTodosState } from "recoil/todosState";
+import { useSetRecoilState } from "recoil";
 
 const TodoFilter = () => {
   const setFilter = useSetRecoilState(filterTodosState);

@@ -1,4 +1,3 @@
-import React from "react";
 import { useRecoilState } from "recoil";
 import { todosState, todoInputState } from "recoil/todosState";
 import { TodoType } from "types/todoType";

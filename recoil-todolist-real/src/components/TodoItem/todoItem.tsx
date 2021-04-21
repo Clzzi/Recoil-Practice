@@ -1,5 +1,3 @@
-import React from "react";
-import { useRecoilState } from "recoil";
 import { TodoPropTypes } from "types/todoType";
 
 const TodoItem = ({data, onDelete, onDone}: TodoPropTypes) => {

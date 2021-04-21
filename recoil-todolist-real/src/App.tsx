@@ -1,11 +1,7 @@
-import React from 'react';
+import TodoTemplate from "templates";
 
 function App() {
-  return (
-    <div>
-      todoList랄까..?
-    </div>
-  );
+  return <TodoTemplate />;
 }
 
 export default App;

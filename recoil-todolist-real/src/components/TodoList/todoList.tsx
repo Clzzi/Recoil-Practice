@@ -1,10 +1,5 @@
-import React from "react";
-import { useRecoilState, useRecoilValue } from "recoil";
-import {
-  todosState,
-  filterTodosState,
-  filterTodosSelector,
-} from "recoil/todosState";
+import { useRecoilValue } from "recoil";
+import { filterTodosSelector } from "recoil/todosState";
 
 const TodoList = () => {
   // const [todos, setTodo] = useRecoilState(todosState);
@@ -13,7 +8,9 @@ const TodoList = () => {
   return (
     <div>
       {todos.map((todo) => {
-        return <div>{todo.contents}</div>;
+        return (
+          <div> {todo.contents} </div>
+        )
       })}
     </div>
   );
