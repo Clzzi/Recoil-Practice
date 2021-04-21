@@ -19,6 +19,14 @@ const TodoList = (): JSX.Element => {
     );
   };
 
+  const deleteItem = (id: number): void => {
+    setTodos(
+      todos.filter((todo) => {
+        return todo.id !== id
+      })
+    );
+  }
+
   return (
     <div className={"todoList-wrapper"}>
       {todos.length ? (
@@ -29,6 +37,7 @@ const TodoList = (): JSX.Element => {
               contents={todo.contents}
               done={todo.done}
               id={todo.id}
+              deleteItem={deleteItem}
               doneChange={doneChange}
             />
           );

@@ -1,8 +1,9 @@
 .todoItem {
   transition: 0.5s;
   display: flex;
-  justify-content: space-between;
   margin-bottom: 15px;
+  font-size: 1.3rem;
+  justify-content: space-between;
   &-id {
     display: inline-block;
   }
@@ -23,6 +24,17 @@
   }
 
   &-checkbox {
- 
+    width: 30px;
+    height: 30px;
+    transition: 0.5s;
+  }
+
+  &-checkbox:checked {
+    transition: 0.5s; 
+  }
+
+  &-delBtn {
+    width: 30px;
+    height: 30px;
   }
 }

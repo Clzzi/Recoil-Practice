@@ -1,12 +1,14 @@
 .todoListInput {
+  margin-top: 15px;
 
-  margin-left: 5px;
   &-Input {
     width: 500px;
     height: 60px;
+    font-size: 2rem;
   }
 
   &-btn {
-    margin-left: 5px;
+    margin-left: 15px;
+    padding: 15px;
   }
 }

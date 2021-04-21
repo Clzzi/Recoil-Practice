@@ -5,9 +5,10 @@ interface Types {
   done: boolean;
   contents: string;
   doneChange: (id: number) => void;
+  deleteItem: (id: number) => void;
 }
 
-const TodoItem = ({ contents, done, id, doneChange }: Types): JSX.Element => {
+const TodoItem = ({ contents, done, id, doneChange, deleteItem }: Types): JSX.Element => {
   return (
     <div className={"todoItem"}>
       <div className={"todoItem-id"}>{id}</div>
@@ -20,6 +21,7 @@ const TodoItem = ({ contents, done, id, doneChange }: Types): JSX.Element => {
         checked={done}
         onChange={() => doneChange(id)}
       />
+      <button className={'todoItem-delBtn'} onClick={() => deleteItem(id)} >❌</button>
     </div>
   );
 };
