@@ -7,17 +7,17 @@ export const todosState = atom<TodoType[]>({
     {
       id: 1,
       done: false,
-      contents: "Notion",
+      contents: "레코일 공부하기!",
     },
     {
       id: 2,
       done: false,
-      contents: "Go Home",
+      contents: "투두리스트 만들어보기!",
     },
     {
       id: 3,
       done: true,
-      contents: "Workout",
+      contents: "놀기!",
     },
   ],
 });

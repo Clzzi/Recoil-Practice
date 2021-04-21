@@ -1,28 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
 .todoItem {
   display: flex;
   justify-content: space-between;
   text-align: center;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 8px;
-  background-color: #748ffc;
+  background-color: rgba(116,143,252,0.65);
   margin-left: 20px;
   margin-right: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  &-title {
+  padding: 12px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px grey;
+  
+  &-delIcon {
     cursor: pointer;
+    width: 34px;
+    height: 34px;
+    transition: 0.7s;
   }
 
+  &-delIcon:hover {
+    color: white;
+    transform:rotate(90deg);
+    transform-origin: center center;
+    transition: 0.7s;
+  }
+  
   &-delete {
-    margin-right: 20px;
-    cursor: pointer
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    height: auto;
   }
-}
 
-/*
-<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
-.nanumsquare {
-    font-family: 'NanumSquare', sans-serif !important;
+  &-title {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 40px;
+  }
+
+  &-title-done {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 40px;
+    color: rgba(0,0,0,0.5);
+    text-decoration: line-through;
+  }
+
+  
 }
-*/

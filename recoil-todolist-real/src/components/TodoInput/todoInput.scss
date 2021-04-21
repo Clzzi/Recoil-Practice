@@ -3,19 +3,22 @@
   &-Input {
     padding: 0px;
     margin: 0px;
-    width: 350px;
-    height: 58px;
+    width: 345px;
+    height: 53px;
     font-size: 1.5rem;
     justify-content: center;
     text-align: center;
     align-items: center;
     border:none;
     border-radius: 3px;
+    outline: none;
+    padding: 5px;
   }
 
   &-Input::-webkit-input-placeholder {
     text-align: center;
   }
+
   &-btn {
     margin-left: 12px;
     color: white;
