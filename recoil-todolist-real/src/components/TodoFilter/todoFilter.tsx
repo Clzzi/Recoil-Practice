@@ -2,9 +2,9 @@ import { filterTodosState } from "recoil/todosState";
 import { useSetRecoilState } from "recoil";
 import "./todoFilter.scss";
 
-const TodoFilter = () => {
+const TodoFilter = (): JSX.Element => {
   const setFilter = useSetRecoilState(filterTodosState);
-
+  
   const onChangeFilter = (e: any) => {
     const { value } = e.target;
     setFilter(value);

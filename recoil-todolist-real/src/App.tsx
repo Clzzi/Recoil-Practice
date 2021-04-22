@@ -1,6 +1,6 @@
 import TodoTemplate from "templates";
 
-function App() {
+function App(): JSX.Element {
   return <TodoTemplate />;
 }
 

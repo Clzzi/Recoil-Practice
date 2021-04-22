@@ -2,7 +2,7 @@ import { TodoPropTypes } from "types/todoType";
 import "./todoItem.scss";
 import { TiDelete } from "react-icons/ti";
 
-const TodoItem = ({ data, onDelete, onDone }: TodoPropTypes) => {
+const TodoItem = ({ data, onDelete, onDone }: TodoPropTypes): JSX.Element => {
   const { id, done, contents } = data;
 
   return (

@@ -5,16 +5,16 @@ import TodoFilter from "components/TodoFilter";
 import { IoCheckmarkSharp } from "react-icons/io5";
 import "./todoInput.scss";
 
-const TodoInput = () => {
+const TodoInput = (): JSX.Element => {
   const [input, setInput] = useRecoilState<string>(todoInputState);
   const [todos, setTodo] = useRecoilState<TodoType[]>(todosState);
 
-  const onChangeInput = (e: any) => {
+  const onChangeInput = (e: React.ChangeEvent<HTMLInputElement>):void => {
     const { value } = e.target;
     setInput(value);
   };
 
-  const onEnter = (e: any) => {
+  const onEnter = (e: React.KeyboardEvent<HTMLInputElement>):  void => {
     if (e.key === "Enter") {
       if (input.length !== 0) {
         const id = todos.length ? todos[todos.length - 1].id + 1 : 0;
@@ -31,7 +31,7 @@ const TodoInput = () => {
     }
   };
 
-  const addTodo = () => {
+  const addTodo = ():void => {
     if (input.length !== 0) {
       const id = todos.length ? todos[todos.length - 1].id + 1 : 0;
 

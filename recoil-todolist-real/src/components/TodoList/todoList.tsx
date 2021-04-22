@@ -5,7 +5,7 @@ import { todosState } from "recoil/todosState";
 import { TodoType } from "types/todoType";
 import "./todoList.scss";
 
-const TodoList = () => {
+const TodoList = (): JSX.Element => {
   const filteredTodos = useRecoilValue(filterTodosSelector);
   const [todos, setTodos] = useRecoilState<TodoType[]>(todosState);
 

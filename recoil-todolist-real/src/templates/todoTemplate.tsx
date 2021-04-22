@@ -2,7 +2,7 @@ import TodoInput from "components/TodoInput";
 import TodoList from "components/TodoList";
 import "./todoTemplate.scss";
 
-const TodoTemplate = () => {
+const TodoTemplate = (): JSX.Element => {
   return (
     <div className={"todoTemplate"}>
       <TodoInput />
