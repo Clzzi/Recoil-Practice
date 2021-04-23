@@ -38,8 +38,6 @@ export const filterTodosSelector = selector({
     const todos = get(todosState);
     const filter = get(filterTodosState);
 
-    console.log(todos, filter);
-
     switch (filter) {
       case "Done":
         return todos.filter((todo) => {
