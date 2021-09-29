@@ -41,6 +41,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:6a23cc67ed8263b8e3f85b61bd15370da119d5cde22e34c3f553fbb763730d57cd5e6629282e50b7a1db5ee999341fa052cdb8c08df3faaa16ab80a635121403#npm:17.0.2"],
             ["react-scripts", "virtual:6a23cc67ed8263b8e3f85b61bd15370da119d5cde22e34c3f553fbb763730d57cd5e6629282e50b7a1db5ee999341fa052cdb8c08df3faaa16ab80a635121403#npm:4.0.3"],
+            ["recoil", "virtual:6a23cc67ed8263b8e3f85b61bd15370da119d5cde22e34c3f553fbb763730d57cd5e6629282e50b7a1db5ee999341fa052cdb8c08df3faaa16ab80a635121403#npm:0.4.1"],
             ["web-vitals", "npm:1.1.2"]
           ],
           "linkType": "SOFT",
@@ -10678,6 +10679,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["hamt_plus", [
+        ["npm:1.0.2", {
+          "packageLocation": "./.yarn/cache/hamt_plus-npm-1.0.2-67a52ee1df-af26ea32db.zip/node_modules/hamt_plus/",
+          "packageDependencies": [
+            ["hamt_plus", "npm:1.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["handle-thing", [
         ["npm:2.0.1", {
           "packageLocation": "./.yarn/cache/handle-thing-npm-2.0.1-084baca59e-68071f3130.zip/node_modules/handle-thing/",
@@ -16432,6 +16442,33 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["recoil", [
+        ["npm:0.4.1", {
+          "packageLocation": "./.yarn/cache/recoil-npm-0.4.1-013a399a25-a11a93e516.zip/node_modules/recoil/",
+          "packageDependencies": [
+            ["recoil", "npm:0.4.1"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:6a23cc67ed8263b8e3f85b61bd15370da119d5cde22e34c3f553fbb763730d57cd5e6629282e50b7a1db5ee999341fa052cdb8c08df3faaa16ab80a635121403#npm:0.4.1", {
+          "packageLocation": "./.yarn/__virtual__/recoil-virtual-cf2115538e/0/cache/recoil-npm-0.4.1-013a399a25-a11a93e516.zip/node_modules/recoil/",
+          "packageDependencies": [
+            ["recoil", "virtual:6a23cc67ed8263b8e3f85b61bd15370da119d5cde22e34c3f553fbb763730d57cd5e6629282e50b7a1db5ee999341fa052cdb8c08df3faaa16ab80a635121403#npm:0.4.1"],
+            ["@types/react", null],
+            ["hamt_plus", "npm:1.0.2"],
+            ["react", "npm:17.0.2"],
+            ["react-dom", "virtual:6a23cc67ed8263b8e3f85b61bd15370da119d5cde22e34c3f553fbb763730d57cd5e6629282e50b7a1db5ee999341fa052cdb8c08df3faaa16ab80a635121403#npm:17.0.2"],
+            ["react-native", null]
+          ],
+          "packagePeers": [
+            "@types/react",
+            "react-dom",
+            "react-native",
+            "react"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["recursive-readdir", [
         ["npm:2.2.2", {
           "packageLocation": "./.yarn/cache/recursive-readdir-npm-2.2.2-7e64fe65fc-a6b22994d7.zip/node_modules/recursive-readdir/",
@@ -19056,6 +19093,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:6a23cc67ed8263b8e3f85b61bd15370da119d5cde22e34c3f553fbb763730d57cd5e6629282e50b7a1db5ee999341fa052cdb8c08df3faaa16ab80a635121403#npm:17.0.2"],
             ["react-scripts", "virtual:6a23cc67ed8263b8e3f85b61bd15370da119d5cde22e34c3f553fbb763730d57cd5e6629282e50b7a1db5ee999341fa052cdb8c08df3faaa16ab80a635121403#npm:4.0.3"],
+            ["recoil", "virtual:6a23cc67ed8263b8e3f85b61bd15370da119d5cde22e34c3f553fbb763730d57cd5e6629282e50b7a1db5ee999341fa052cdb8c08df3faaa16ab80a635121403#npm:0.4.1"],
             ["web-vitals", "npm:1.1.2"]
           ],
           "linkType": "SOFT",

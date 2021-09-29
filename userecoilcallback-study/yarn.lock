@@ -7177,6 +7177,13 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"hamt_plus@npm:1.0.2":
+  version: 1.0.2
+  resolution: "hamt_plus@npm:1.0.2"
+  checksum: af26ea32db03009019cc83dfa9411521a2fa16079443de1a502c9be46d8b3c975acda8ed93fc5750ef08d3186d35901e2d8cfe717dd54bea67b358601fa74e4c
+  languageName: node
+  linkType: hard
+
 "handle-thing@npm:^2.0.0":
   version: 2.0.1
   resolution: "handle-thing@npm:2.0.1"
@@ -12314,6 +12321,22 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"recoil@npm:^0.4.1":
+  version: 0.4.1
+  resolution: "recoil@npm:0.4.1"
+  dependencies:
+    hamt_plus: 1.0.2
+  peerDependencies:
+    react: ">=16.13.1"
+  peerDependenciesMeta:
+    react-dom:
+      optional: true
+    react-native:
+      optional: true
+  checksum: a11a93e5168d22500b8b981b0ae9c31a81987f5d7213f8be9531c3938d1b2c192ee664d94c9a70302248a292cb21ec430b0e8113f751d0ff46185ebf32c58c95
+  languageName: node
+  linkType: hard
+
 "recursive-readdir@npm:2.2.2":
   version: 2.2.2
   resolution: "recursive-readdir@npm:2.2.2"
@@ -14610,6 +14633,7 @@ resolve@1.18.1:
     react: ^17.0.2
     react-dom: ^17.0.2
     react-scripts: 4.0.3
+    recoil: ^0.4.1
     web-vitals: ^1.0.1
   languageName: unknown
   linkType: soft
